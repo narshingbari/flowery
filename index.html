@@ -21,34 +21,45 @@
     </script>
     <script type="text/JavaScript">
         function killCopy(e){
-        return false
-    }
-    function reEnable(){
-        return true
-    }
-    document.onselectstart=new Function ("return false")
-    if (window.sidebar){
-        document.onmousedown=killCopy
-        document.onclick=reEnable
-    }
-</script>
-    <meta charset="UTF-8">
-    <title>Narshingbari Saddam - Flowery 🌸</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="https://i.postimg.cc/28jQnDHs/Icon-16-by-16.jpg">
-    <link rel="stylesheet" href="./flowery.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta content='This is Narshingbari Saddam Flowery magical website for kids entertainment, its shows various types of flowers after each click or touch. This website designed and developed by Saddam Hussain of Narshingbari' name='description' />
-    <style>
-        .footer {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background-color: YellowGreen;
-            color: white;
-            text-align: center;
+            return false
         }
-    </style>
+        function reEnable(){
+            return true
+        }
+        document.onselectstart=new Function ("return false")
+        if (window.sidebar){
+            document.onmousedown=killCopy
+            document.onclick=reEnable
+        }
+    </script>
+    <script>
+        document.addEventListener("keydown", (e) => {
+  // USE THIS TO DISABLE CONTROL AND ALL FUNCTION KEYS
+  // if (e.ctrlKey || (e.keyCode>=112 && e.keyCode<=123)) {
+  // THIS WILL ONLY DISABLE CONTROL AND F12
+          if (e.ctrlKey || e.keyCode==123) {
+            e.stopPropagation();
+            e.preventDefault();
+        }
+    });
+</script>
+<meta charset="UTF-8">
+<title>Narshingbari Saddam - Flowery 🌸</title>
+<link rel="icon" type="image/png" sizes="32x32" href="https://i.postimg.cc/28jQnDHs/Icon-16-by-16.jpg">
+<link rel="stylesheet" href="./flowery.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content='This is Narshingbari Saddam Flowery magical website for kids entertainment, its shows various types of flowers after each click or touch. This website designed and developed by Saddam Hussain of Narshingbari' name='description' />
+<style>
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: YellowGreen;
+        color: white;
+        text-align: center;
+    }
+</style>
 </head>
 
 <body>
