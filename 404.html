@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <script>
+        var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+        if (navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN || Event.MOUSEUP);
+
+        function mischandler() {
+            return false;
+        }
+
+        function mousehandler(e) {
+            var myevent = (isNS) ? e : event;
+            var eventbutton = (isNS) ? myevent.which : myevent.button;
+            if ((eventbutton == 2) || (eventbutton == 3)) return false;
+        }
+        document.oncontextmenu = mischandler;
+        document.onmousedown = mousehandler;
+        document.onmouseup = mousehandler;
+    </script>
+    <script type="text/JavaScript">
+        function killCopy(e){
+            return false
+        }
+        function reEnable(){
+            return true
+        }
+        document.onselectstart=new Function ("return false")
+        if (window.sidebar){
+            document.onmousedown=killCopy
+            document.onclick=reEnable
+        }
+    </script>
+    <script>
+      document.addEventListener("keydown", (e) => {
+          if (e.ctrlKey || e.keyCode==123) {
+              e.stopPropagation();
+              e.preventDefault();
+          }
+      });
+  </script>
+  <meta charset="UTF-8">
+  <title>Narshingbari Saddam</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://i.postimg.cc/28jQnDHs/Icon-16-by-16.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content='This website designed and developed by Saddam Hussain of Narshingbari' name='description' />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Arvo'><link rel="stylesheet" href="./style-error.css">
+
+</head>
+<body>
+    <!-- partial:index.partial.html -->
+    <section class="page_404">
+     <div class="container">
+      <div class="row">	
+          <div class="col-sm-12 ">
+              <div class="col-sm-10 col-sm-offset-1  text-center">
+                  <div class="four_zero_four_bg">
+                   <h1 class="text-center ">404</h1>
+
+
+               </div>
+
+               <div class="contant_box_404">
+                  <h3 class="h2">
+                      Look like you're lost
+                  </h3>
+
+                  <p>the page you are looking for not avaible!</p>
+
+                  <a href="/flowery" class="link_404">Go to Home</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</section>
+<!-- partial -->
+
+</body>
+</html>
